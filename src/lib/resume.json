@@ -1,0 +1,134 @@
+{
+  "basics": {
+    "name": "Dharmil Vaghasiya",
+    "label": "Software Engineer",
+    "email": "dharmilvaghasia3675@gmail.com",
+    "location": {
+      "city": "Greater Montreal Metropolitan Area",
+      "countryCode": "CA",
+      "province": "Quebec"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "dharmil3675",
+        "url": "https://github.com/dharmil3675"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "dharmil-vaghasiya",
+        "url": "https://www.linkedin.com/in/dharmil-vaghasiya/"
+      }
+    ]
+  },
+  "summary": "I am a student pursuing my Masters from Concordia University, and also working as a Fronted Engineer at Kami Vision. I enjoys programming and problem-solving and sees hacking on software as a way of life rather than just a job.",
+  "skills": [
+    {
+      "name": "Programming Languages",
+      "keywords": ["C", "C++", "Java", "Java Script", "SQL", "Golang"]
+    },
+    {
+      "name": "Frameworks & Database",
+      "keywords": ["React.js", "Node.js", "Express", "MySQL"]
+    },
+    {
+      "name": "Other Skills",
+      "keywords": [
+        "Data structures & Algorithms",
+        "Problem Solving",
+        "HTML",
+        "CSS",
+        "REST APIs"
+      ]
+    },
+    {
+      "name": "Development Tools / Environments",
+      "keywords": ["Visual Studio Code", "IntelliJ", "Postman"]
+    },
+    {
+      "name": "Version Control",
+      "keywords": ["Git"]
+    }
+  ],
+  "work": [
+    {
+      "company": "Kami Vision",
+      "position": "Frontend Engineer",
+      "website": "https://kamivision.com/",
+      "startDate": "October 2022",
+      "endDate": "Present",
+      "location": "Remote, USA",
+      "summary": "React.js, TypeScript, Team Collaboration",
+      "highlights": [
+        "Experience creating reusable UI components using React.js to build modern and responsive user interfaces.",
+        "Proficiency in integrating backend APIs with frontend components using popular frameworks such as Axios.",
+        "Integrated AWS Kinesis Video Streams with app to see live view from cameras.",
+        "Experience working collaboratively with cross-functional teams, including product managers, designers, and software engineers.",
+        "Made meaningful changes in kamicare and kamihome site that improved user experience and increased user interaction on web-site.",
+        "Worked on creating user friendly UI for kami secure, B2B product of company."
+      ]
+    },
+    {
+      "company": "Institute for Plasma Research",
+      "position": "Software Engineering Intern",
+      "website": "https://www.ipr.res.in/",
+      "startDate": "December 2021",
+      "endDate": "March 2022",
+      "location": "Gandhinagar, India",
+      "summary": "Backend APIs development(Node.js), Sequelize ORM, Flutter App development, Firebase push Notification",
+      "highlights": [
+        "Developed full stack application in Flutter and node.js to make help healthcare system more accessible to institute’s employees. ",
+        "Created API endpoints to perform various operation related to User, Hospital, Doctor, and Chemists.",
+        "Added features like Role based access, Searching, Push notification and basic user functionalities.",
+        "Push notification conveyed real-time updates to user and it increased user interaction drastically with app."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Concordia University",
+      "area": "",
+      "studyType": "Masters of Applied Computer Science",
+      "startDate": "September 2022",
+      "endDate": "Present",
+      "gpa": "4.00/4.30"
+    },
+    {
+      "institution": "Dharmsinh Desai University",
+      "area": "",
+      "studyType": "Bachelors of Technology, Information Technology",
+      "startDate": "June 2018",
+      "endDate": "May 2022",
+      "gpa": "8.73/10.00"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Kubeflow-GNN",
+      "startDate": "October 2022",
+      "endDate": "November 2022",
+      "description": "",
+      "summary": "Python, PyTorch, Kubeflow",
+      "link": "https://github.com/dharmil3675/Advertisement-management-system",
+      "highlights": [
+        "Developed a graph neural network (GNN) model to perform link property prediction in a citation network using SAGEConv.",
+        "Deployed the GNN model training as a PyTorchJob in Kubeflow, implementing PyTorch training operator.",
+        "Performed distributed training of the model using DDP (DistributedDataParallel) and measured accuracy and training time with different epochs and number of workers."
+      ]
+    },
+    {
+      "name": "Advertisement Management System",
+      "startDate": "January 2021",
+      "endDate": "April 2022",
+      "description": "",
+      "summary": "React.js, Node.js, MongoDB, Express.js",
+      "link": "https://github.com/ozx1812/kubeflow-GNN",
+      "highlights": [
+        "Developed system to connect influencers and brands.",
+        "This was a complete Online solution for influencers and brands who want to advertise their brands on various social media.",
+        "It Includes advanced functionality like Razorpay payment gateway and search functionality.",
+        "Frotend in created using React.js and API endpoints in Node.js to handle all the operations."
+      ]
+    }
+  ]
+}

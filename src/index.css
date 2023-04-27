@@ -1,0 +1,38 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-size: 62.5%;
+  font-family: Montserrat;
+  color: #333333;
+}
+
+#root {
+  height: 100%;
+}
+
+body .github-fork-ribbon:before {
+  background-color: #333;
+}
+
+@media screen and (max-width: 400px) {
+  .github-fork-ribbon {
+    display: none;
+  }
+}
+
+/** Typography **/
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5em;
+}
