@@ -109,7 +109,7 @@
       "endDate": "November 2022",
       "description": "",
       "summary": "Python, PyTorch, Kubeflow",
-      "link": "https://github.com/ozx1812/kubeflow-GNN",
+      "link": "https://github.com/dharmil3675/kubeflow-GNN",
       "highlights": [
         "Developed a graph neural network (GNN) model to perform link property prediction in a citation network using SAGEConv.",
         "Deployed the GNN model training as a PyTorchJob in Kubeflow, implementing PyTorch training operator.",

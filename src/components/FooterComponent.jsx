@@ -17,7 +17,7 @@ const SourceCode = styled.div`
     font-size: 1.21rem;
 `
 
-const sourceCodeLink = "https://github.com/dharmil3675/Portfolio-Website";
+const sourceCodeLink = "https://github.com/dharmil3675/dharmil3675.github.io";
 
 export default function FooterComponent() {
     return (
