@@ -29,21 +29,23 @@
     },
     {
       "name": "Frameworks & Database",
-      "keywords": ["React.js", "Node.js", "Express", "MySQL"]
+      "keywords": ["React.js", "Node.js", "Express.js", "MySQL"]
+    },
+    {
+      "name": "Web Development",
+      "keywords": ["HTML", "CSS", "REST APIs"]
+    },
+    {
+      "name": "Cloud",
+      "keywords": ["Docker", "Amazon Web Services"]
     },
     {
       "name": "Other Skills",
-      "keywords": [
-        "Data structures & Algorithms",
-        "Problem Solving",
-        "HTML",
-        "CSS",
-        "REST APIs"
-      ]
+      "keywords": ["Data structures & Algorithms", "Problem Solving"]
     },
     {
       "name": "Development Tools / Environments",
-      "keywords": ["Visual Studio Code", "IntelliJ", "Postman"]
+      "keywords": ["Visual Studio Code", "IntelliJ", "Postman", "JIRA"]
     },
     {
       "name": "Version Control",
@@ -79,6 +81,8 @@
       "highlights": [
         "Developed full stack application in Flutter and node.js to make help healthcare system more accessible to institute’s employees. ",
         "Created API endpoints to perform various operation related to User, Hospital, Doctor, and Chemists.",
+        "Developed and implemented REST APIs using Sequelize ORM, that provided integration between the application and the database.",
+        "Implemented transactions in Sequelize ORM to manage critical operations, such as creating multiple related records or updating multiple tables simultaneously, ensuring data consistency and reliability.",
         "Added features like Role based access, Searching, Push notification and basic user functionalities.",
         "Push notification conveyed real-time updates to user and it increased user interaction drastically with app."
       ]
@@ -124,10 +128,10 @@
       "summary": "React.js, Node.js, MongoDB, Express.js",
       "link": "https://github.com/dharmil3675/Advertisement-management-system",
       "highlights": [
-        "Developed system to connect influencers and brands.",
-        "This was a complete Online solution for influencers and brands who want to advertise their brands on various social media.",
-        "It Includes advanced functionality like Razorpay payment gateway and search functionality.",
-        "Frotend in created using React.js and API endpoints in Node.js to handle all the operations."
+        "Developed a comprehensive online solution to facilitate the connection between influencers and brands, enabling effective brand advertising on multiple social media platforms",
+        "Utilized Cloudinary as a cloud-based storage solution for managing and storing photos.",
+        "Incorporated advance functionality like Razorpay payment gateway and search.",
+        "Frotend was created using React.js and API endpoints in Node.js to handle all the operations."
       ]
     }
   ]
