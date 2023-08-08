@@ -11,8 +11,8 @@
     "profiles": [
       {
         "network": "GitHub",
-        "username": "dharmil3675",
-        "url": "https://github.com/dharmil3675"
+        "username": "dharmil-vaghasiya",
+        "url": "https://github.com/dharmil-vaghasiya"
       },
       {
         "network": "LinkedIn",
@@ -62,12 +62,11 @@
       "location": "Remote, USA",
       "summary": "React.js, TypeScript, Team Collaboration",
       "highlights": [
-        "Experience creating reusable UI components using React.js to build modern and responsive user interfaces.",
-        "Proficiency in integrating backend APIs with frontend components using popular frameworks such as Axios.",
-        "Integrated AWS Kinesis Video Streams with app to see live view from cameras.",
-        "Experience working collaboratively with cross-functional teams, including product managers, designers, and software engineers.",
-        "Made meaningful changes in kamicare and kamihome site that improved user experience and increased user interaction on web-site.",
-        "Worked on creating user friendly UI for kami secure, B2B product of company."
+        "Integrated AWS Kinesis video streams into application, enabling seamless live camera views and elevating user engagement.",
+        "Designed and developed a user-friendly interface for pairing the proprietary company hub with cameras, contributing to an improved user onboarding experience.",
+        "Resolved a critical bug in the zone definition feature, enhancing the reliability and accuracy of event detection by preventing the drawing of overlapping zones, resulting in more precise and effective monitoring",
+        "Built reusable UI components using React.js, creating modern and responsive interfaces, also integrated it with backend APIs.",
+        "Experience working collaboratively with cross-functional teams, including product managers, designers, and software engineers."
       ]
     },
     {
@@ -95,7 +94,7 @@
       "studyType": "Masters of Applied Computer Science",
       "startDate": "September 2022",
       "endDate": "Present",
-      "gpa": "4.00/4.30"
+      "gpa": "3.77/4.30"
     },
     {
       "institution": "Dharmsinh Desai University",
@@ -113,7 +112,7 @@
       "endDate": "November 2022",
       "description": "",
       "summary": "Python, PyTorch, Kubeflow",
-      "link": "https://github.com/dharmil3675/kubeflow-GNN",
+      "link": "https://github.com/dharmil-vaghasiya/kubeflow-GNN",
       "highlights": [
         "Developed a graph neural network (GNN) model to perform link property prediction in a citation network using SAGEConv.",
         "Deployed the GNN model training as a PyTorchJob in Kubeflow, implementing PyTorch training operator.",
@@ -126,12 +125,24 @@
       "endDate": "April 2022",
       "description": "",
       "summary": "React.js, Node.js, MongoDB, Express.js",
-      "link": "https://github.com/dharmil3675/Advertisement-management-system",
+      "link": "https://github.com/dharmil-vaghasiya/Advertisement-management-system",
       "highlights": [
         "Developed a comprehensive online solution to facilitate the connection between influencers and brands, enabling effective brand advertising on multiple social media platforms",
         "Utilized Cloudinary as a cloud-based storage solution for managing and storing photos.",
         "Incorporated advance functionality like Razorpay payment gateway and search.",
         "Frotend was created using React.js and API endpoints in Node.js to handle all the operations."
+      ]
+    },
+    {
+      "name": "Analysis of First Fit and CBIP Algorithms on Online Graph Coloring",
+      "startDate": "March 2023",
+      "endDate": "",
+      "description": "",
+      "summary": "C++, JavaScript",
+      "link": "https://github.com/dharmil-vaghasiya/graph-coloring",
+      "highlights": [
+        "Designed and developed a React app to analyze and compare the performance of First Fit and CBIP algorithms for online graph colouring.",
+        "Implemented First Fit and CBIP algorithms in JavaScript to colour the nodes of an online graph as they arrive in real-time."
       ]
     }
   ]
