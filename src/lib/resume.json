@@ -25,7 +25,7 @@
   "skills": [
     {
       "name": "Programming Languages",
-      "keywords": ["C", "C++", "Java", "Java Script", "SQL", "Golang"]
+      "keywords": ["Java Script", "Typescript", "Java", "C", "C++", "SQL", "Golang"]
     },
     {
       "name": "Frameworks & Database",
@@ -58,14 +58,15 @@
       "position": "Frontend Engineer",
       "website": "https://kamivision.com/",
       "startDate": "October 2022",
-      "endDate": "Present",
-      "location": "Remote, USA",
+      "endDate": "July 2023",
+      "location": "San Jose, USA (Remote)",
       "summary": "React.js, TypeScript, Team Collaboration",
       "highlights": [
-        "Integrated AWS Kinesis video streams into application, enabling seamless live camera views and elevating user engagement.",
-        "Designed and developed a user-friendly interface for pairing the proprietary company hub with cameras, contributing to an improved user onboarding experience.",
-        "Resolved a critical bug in the zone definition feature, enhancing the reliability and accuracy of event detection by preventing the drawing of overlapping zones, resulting in more precise and effective monitoring",
-        "Built reusable UI components using React.js, creating modern and responsive interfaces, also integrated it with backend APIs.",
+        "Built reusable UI components using React.js, creating modern and responsive interfaces, and integrating backend APIs with it.",
+        "Integrated AWS Kinesis video streams into application, which enabled live camera views and elevated user engagement.",
+        "Engineered a user-friendly interface for pairing the proprietary company hub with cameras, which contributed to an improved user onboarding experience.",
+        "Devised the zone feature and other significant enhancements that heightened the reliability and accuracy of event detection, leading to a notable 5% improvement in precision for more effective monitoring.",
+        "Optimized the customer experience on the \textit{KamiHome} website, implementing strategic changes that led to a remarkable 30% increase in customers' time spent on the platform.",
         "Experience working collaboratively with cross-functional teams, including product managers, designers, and software engineers."
       ]
     },
@@ -107,6 +108,18 @@
   ],
   "projects": [
     {
+      "name": "Analysis of First Fit and CBIP Algorithms on Online Graph Coloring",
+      "startDate": "March 2023",
+      "endDate": "April 2023",
+      "description": "",
+      "summary": "C++, JavaScript",
+      "link": "https://github.com/dharmil-vaghasiya/graph-coloring",
+      "highlights": [
+        "Designed and developed a React app to analyze and compare the performance of First Fit and CBIP algorithms for online graph colouring.",
+        "Implemented First Fit and CBIP algorithms in JavaScript to colour the nodes of an online graph as they arrive in real-time."
+      ]
+    },
+    {
       "name": "Kubeflow-GNN",
       "startDate": "October 2022",
       "endDate": "November 2022",
@@ -131,18 +144,6 @@
         "Utilized Cloudinary as a cloud-based storage solution for managing and storing photos.",
         "Incorporated advance functionality like Razorpay payment gateway and search.",
         "Frotend was created using React.js and API endpoints in Node.js to handle all the operations."
-      ]
-    },
-    {
-      "name": "Analysis of First Fit and CBIP Algorithms on Online Graph Coloring",
-      "startDate": "March 2023",
-      "endDate": "",
-      "description": "",
-      "summary": "C++, JavaScript",
-      "link": "https://github.com/dharmil-vaghasiya/graph-coloring",
-      "highlights": [
-        "Designed and developed a React app to analyze and compare the performance of First Fit and CBIP algorithms for online graph colouring.",
-        "Implemented First Fit and CBIP algorithms in JavaScript to colour the nodes of an online graph as they arrive in real-time."
       ]
     }
   ]
