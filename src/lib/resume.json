@@ -21,11 +21,11 @@
       }
     ]
   },
-  "summary": "I am a student pursuing my Masters from Concordia University, and also working as a Fronted Engineer at Kami Vision. I enjoys programming and problem-solving and sees hacking on software as a way of life rather than just a job.",
+  "summary": "I'm Dharmil Vaghasiya, a Software Engineer based in Montreal. I enjoy programming and problem-solving, viewing software development as both a passion and a profession. With a Master's in Applied Computer Science, I specialize in backend development, creating efficient and scalable systems.",
   "skills": [
     {
       "name": "Programming Languages",
-      "keywords": ["Java Script", "Typescript", "Java", "C", "C++", "SQL", "Golang"]
+      "keywords": ["Golang", "Java Script", "Typescript", "Java", "C", "C++"]
     },
     {
       "name": "Frameworks & Database",
@@ -54,13 +54,29 @@
   ],
   "work": [
     {
+      "company": "Instavision",
+      "position": "Software Development Engineer - 2",
+      "website": "https://instavision.ai/",
+      "startDate": "August 2023",
+      "endDate": "Present",
+      "location": "California, USA (Remote)",
+      "summary": "Golang, RabbitMQ, MongoDB, Redis, Docker",
+      "highlights": [
+        "Actively contributing to the development of a high-performance backend system from the ground up using Go and the Gin web framework, which can handle millions of daily requests efficiently.",
+        "Designed and implemented a Pro Security feature for a household security system, enabling automatic alarm generation and police notification upon detecting human presence through cameras when the system is in armed mode.",
+        "Designed and developed APIs for OEM (Original Equipment Manufacturer) and seller portals, including defining required entities and designing their schema to enable efficient device management, firmware updates, and seller operations.",
+        "Employed domain-driven architecture principles in backend development to ensure a scalable and maintainable codebase.",
+        "Developed a generic RabbitMQ Producer code, designed for use by multiple services, facilitating asynchronous communication between various components of the system."
+      ]
+    },
+    {
       "company": "Kami Vision",
       "position": "Frontend Engineer",
       "website": "https://kamivision.com/",
       "startDate": "October 2022",
       "endDate": "July 2023",
       "location": "San Jose, USA (Remote)",
-      "summary": "React.js, TypeScript, Team Collaboration",
+      "summary": "React.js, TypeScript",
       "highlights": [
         "Built reusable UI components using React.js, creating modern and responsive interfaces, and integrating backend APIs with it.",
         "Integrated AWS Kinesis video streams into application, which enabled live camera views and elevated user engagement.",
@@ -94,7 +110,7 @@
       "area": "",
       "studyType": "Masters of Applied Computer Science",
       "startDate": "September 2022",
-      "endDate": "Present",
+      "endDate": "May 2024",
       "gpa": "3.77/4.30"
     },
     {
