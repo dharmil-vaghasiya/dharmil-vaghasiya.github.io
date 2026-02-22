@@ -31,7 +31,7 @@ const LandingPage = () => {
       }, 2000);
       return () => clearTimeout(timeout);
     }
-  }, [typedText, currentCommand, commands]);
+  }, [typedText, currentCommand]);
 
   // Cursor blink effect
   useEffect(() => {
