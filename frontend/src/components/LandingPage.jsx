@@ -8,14 +8,14 @@ const LandingPage = () => {
   const [currentCommand, setCurrentCommand] = useState(0);
   const [showCursor, setShowCursor] = useState(true);
 
-  const commands = [
-    personalInfo.name,
-    personalInfo.title,
-    personalInfo.tagline
-  ];
-
   // Typing animation effect
   useEffect(() => {
+    const commands = [
+      personalInfo.name,
+      personalInfo.title,
+      personalInfo.tagline
+    ];
+    
     if (currentCommand >= commands.length) return;
     
     const fullText = commands[currentCommand];
