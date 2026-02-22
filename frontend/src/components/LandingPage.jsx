@@ -68,72 +68,116 @@ const LandingPage = () => {
   };
 
   return (
-    <div className="landing-page">
-      {/* Fixed Header */}
-      <header className={`fixed-header ${scrollY > 50 ? 'scrolled' : ''}`}>
-        <div className="header-container">
-          <div className="logo" onClick={() => scrollToSection('hero')}>
-            {personalInfo.name.split(' ').map(n => n[0]).join('')}
-          </div>
-          <nav className="nav-menu">
-            <button 
-              onClick={() => scrollToSection('about')}
-              className={activeSection === 'about' ? 'active' : ''}
-            >
-              About
-            </button>
-            <button 
-              onClick={() => scrollToSection('projects')}
-              className={activeSection === 'projects' ? 'active' : ''}
-            >
-              Projects
-            </button>
-            <button 
-              onClick={() => scrollToSection('skills')}
-              className={activeSection === 'skills' ? 'active' : ''}
-            >
-              Skills
-            </button>
-            <button 
-              onClick={() => scrollToSection('contact')}
-              className="contact-btn"
-            >
-              Contact
-            </button>
-          </nav>
+    <div className="terminal-page">
+      {/* Terminal Header */}
+      <header className="terminal-header">
+        <div className="terminal-window-controls">
+          <span className="control-btn close"></span>
+          <span className="control-btn minimize"></span>
+          <span className="control-btn maximize"></span>
         </div>
+        <div className="terminal-title">
+          <Terminal size={16} />
+          <span>alex@portfolio: ~</span>
+        </div>
+        <nav className="terminal-nav">
+          <button 
+            onClick={() => scrollToSection('about')}
+            className={activeSection === 'about' ? 'active' : ''}
+          >
+            ./about
+          </button>
+          <button 
+            onClick={() => scrollToSection('projects')}
+            className={activeSection === 'projects' ? 'active' : ''}
+          >
+            ./projects
+          </button>
+          <button 
+            onClick={() => scrollToSection('skills')}
+            className={activeSection === 'skills' ? 'active' : ''}
+          >
+            ./skills
+          </button>
+          <button 
+            onClick={() => scrollToSection('contact')}
+            className="contact-cmd"
+          >
+            ./contact
+          </button>
+        </nav>
       </header>
 
       {/* Hero Section */}
-      <section id="hero" className="hero-section">
-        <div className="hero-content">
-          <div className="hero-graphic" style={{ transform: `rotate(${scrollY * 0.1}deg)` }}>
-            <div className="circle-1"></div>
-            <div className="circle-2"></div>
-            <div className="circle-3"></div>
+      <section id="hero" className="terminal-hero">
+        <div className="ascii-art">
+          <pre>{`
+    ╔═══════════════════════════════════════╗
+    ║     DEVELOPER  PORTFOLIO  v1.0        ║
+    ╚═══════════════════════════════════════╝
+          `}</pre>
+        </div>
+        <div className="command-prompt">
+          <span className="prompt">guest@portfolio:~$</span>
+          <span className="command">cat developer.txt</span>
+        </div>
+        <div className="terminal-output">
+          <h1 className="terminal-headline">
+            <span className="prompt-symbol">&gt;</span> {personalInfo.name}
+          </h1>
+          <p className="terminal-subtitle">
+            <span className="comment">#</span> {personalInfo.title}
+          </p>
+          <p className="terminal-tagline">
+            <span className="comment">//</span> {personalInfo.tagline}
+          </p>
+          <div className="terminal-info">
+            <div className="info-line">
+              <ChevronRight size={14} className="chevron" />
+              <span className="key">Experience:</span>
+              <span className="value">{personalInfo.yearsOfExperience} years</span>
+            </div>
+            <div className="info-line">
+              <ChevronRight size={14} className="chevron" />
+              <span className="key">Role:</span>
+              <span className="value">{personalInfo.currentRole}</span>
+            </div>
+            <div className="info-line">
+              <ChevronRight size={14} className="chevron" />
+              <span className="key">Location:</span>
+              <span className="value">{personalInfo.location}</span>
+            </div>
           </div>
-          <h1 className="hero-headline">{personalInfo.name}</h1>
-          <p className="hero-subtitle">{personalInfo.title}</p>
-          <p className="hero-tagline">{personalInfo.tagline}</p>
-          <div className="hero-meta">
-            <span>{personalInfo.yearsOfExperience} years experience</span>
-            <span className="separator">•</span>
-            <span>{personalInfo.currentRole}</span>
-          </div>
+        </div>
+        <div className="typing-indicator">
+          <span className="prompt">guest@portfolio:~$</span>
+          <span className="typed-text">{typedText}</span>
+          <span className={`cursor ${showCursor ? 'visible' : ''}`}>█</span>
         </div>
       </section>
 
       {/* About Section */}
-      <section id="about" className="about-section">
-        <div className="section-container">
-          <h2 className="section-header">About</h2>
-          <div className="about-content">
-            <p className="about-bio">{aboutData.bio}</p>
-            <div className="highlights-grid">
+      <section id="about" className="terminal-section">
+        <div className="section-command">
+          <span className="prompt">guest@portfolio:~$</span>
+          <span className="command">cat about.txt</span>
+        </div>
+        <div className="terminal-content">
+          <div className="file-header">
+            <File size={16} />
+            <span>about.txt</span>
+          </div>
+          <div className="about-output">
+            <p className="bio-text">{aboutData.bio}</p>
+            <div className="highlights">
+              <div className="highlight-header">
+                <span className="comment"># Key Highlights</span>
+              </div>
               {aboutData.highlights.map((highlight, index) => (
-                <div key={index} className="highlight-item">
-                  <div className="highlight-dot"></div>
-                  <p>{highlight}</p>
+                <div key={index} className="highlight-line">
+                  <span className="line-number">{String(index + 1).padStart(2, '0')}</span>
+                  <ChevronRight size={14} className="chevron" />
+                  <span>{highlight}</span>
                 </div>
               ))}
             </div>
@@ -142,26 +186,34 @@ const LandingPage = () => {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="projects-section">
-        <div className="section-container">
-          <h2 className="section-header">Selected Work</h2>
-          <div className="projects-grid">
+      <section id="projects" className="terminal-section">
+        <div className="section-command">
+          <span className="prompt">guest@portfolio:~$</span>
+          <span className="command">ls -la ./projects</span>
+        </div>
+        <div className="terminal-content">
+          <div className="ls-header">
+            <span>total {projectsData.length}</span>
+          </div>
+          <div className="projects-list">
             {projectsData.map((project, index) => (
-              <div 
-                key={project.id} 
-                className="project-card"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <div className="project-year">{project.year}</div>
-                <h3 className="project-name">{project.name}</h3>
-                <p className="project-description">{project.description}</p>
-                <div className="project-tech">
-                  {project.technologies.map((tech, idx) => (
-                    <span key={idx} className="tech-tag">{tech}</span>
-                  ))}
+              <div key={project.id} className="project-item">
+                <div className="project-meta">
+                  <Folder size={16} className="folder-icon" />
+                  <span className="permissions">drwxr-xr-x</span>
+                  <span className="date">{project.year}</span>
+                  <span className="project-name">{project.name}</span>
                 </div>
-                <div className="project-link">
-                  <ExternalLink size={16} />
+                <div className="project-details">
+                  <p className="project-desc">
+                    <span className="comment">#</span> {project.description}
+                  </p>
+                  <div className="tech-stack">
+                    <span className="stack-label">tech_stack:</span>
+                    <span className="stack-values">
+                      [{project.technologies.map(tech => `"${tech}"`).join(', ')}]
+                    </span>
+                  </div>
                 </div>
               </div>
             ))}
@@ -170,99 +222,137 @@ const LandingPage = () => {
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className="skills-section">
-        <div className="section-container">
-          <h2 className="section-header">Skills & Technologies</h2>
-          <div className="skills-content">
-            <div className="skill-category">
-              <h3 className="skill-category-title">Primary Focus</h3>
-              <div className="skill-tags">
-                {skillsData.primary.map((skill, index) => (
-                  <span key={index} className="skill-tag primary">{skill}</span>
-                ))}
-              </div>
+      <section id="skills" className="terminal-section">
+        <div className="section-command">
+          <span className="prompt">guest@portfolio:~$</span>
+          <span className="command">cat skills.json</span>
+        </div>
+        <div className="terminal-content">
+          <div className="json-output">
+            <div className="json-line">
+              <span className="bracket">{'{'}</span>
             </div>
-            <div className="skill-category">
-              <h3 className="skill-category-title">Languages</h3>
-              <div className="skill-tags">
-                {skillsData.languages.map((skill, index) => (
-                  <span key={index} className="skill-tag">{skill}</span>
+            
+            <div className="json-property">
+              <span className="key">"primary_focus"</span>
+              <span>: [</span>
+              <div className="json-array">
+                {skillsData.primary.map((skill, idx) => (
+                  <span key={idx} className="skill-value primary">
+                    "{skill}"{idx < skillsData.primary.length - 1 ? ',' : ''}
+                  </span>
                 ))}
               </div>
+              <span>],</span>
             </div>
-            <div className="skill-category">
-              <h3 className="skill-category-title">Technologies & Tools</h3>
-              <div className="skill-tags">
-                {skillsData.technologies.map((skill, index) => (
-                  <span key={index} className="skill-tag">{skill}</span>
+
+            <div className="json-property">
+              <span className="key">"languages"</span>
+              <span>: [</span>
+              <div className="json-array">
+                {skillsData.languages.map((skill, idx) => (
+                  <span key={idx} className="skill-value">
+                    "{skill}"{idx < skillsData.languages.length - 1 ? ',' : ''}
+                  </span>
                 ))}
               </div>
+              <span>],</span>
             </div>
-            <div className="skill-category">
-              <h3 className="skill-category-title">Practices</h3>
-              <div className="skill-tags">
-                {skillsData.practices.map((skill, index) => (
-                  <span key={index} className="skill-tag">{skill}</span>
+
+            <div className="json-property">
+              <span className="key">"technologies"</span>
+              <span>: [</span>
+              <div className="json-array">
+                {skillsData.technologies.map((skill, idx) => (
+                  <span key={idx} className="skill-value">
+                    "{skill}"{idx < skillsData.technologies.length - 1 ? ',' : ''}
+                  </span>
                 ))}
               </div>
+              <span>],</span>
+            </div>
+
+            <div className="json-property">
+              <span className="key">"practices"</span>
+              <span>: [</span>
+              <div className="json-array">
+                {skillsData.practices.map((skill, idx) => (
+                  <span key={idx} className="skill-value">
+                    "{skill}"{idx < skillsData.practices.length - 1 ? ',' : ''}
+                  </span>
+                ))}
+              </div>
+              <span>]</span>
+            </div>
+
+            <div className="json-line">
+              <span className="bracket">{'}'}</span>
             </div>
           </div>
         </div>
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="contact-section">
-        <div className="section-container">
-          <h2 className="section-header">Get In Touch</h2>
-          <p className="contact-text">
-            I'm always interested in hearing about new opportunities and collaborations.
-          </p>
-          <div className="contact-links">
-            <a 
-              href={`mailto:${contactData.email}`} 
-              className="contact-link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Mail size={20} />
-              <span>Email</span>
-            </a>
-            <a 
-              href={`https://github.com/${contactData.github}`}
-              className="contact-link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Github size={20} />
-              <span>GitHub</span>
-            </a>
-            <a 
-              href={`https://linkedin.com/in/${contactData.linkedin}`}
-              className="contact-link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Linkedin size={20} />
-              <span>LinkedIn</span>
-            </a>
-            <a 
-              href={`https://twitter.com/${contactData.twitter}`}
-              className="contact-link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Twitter size={20} />
-              <span>Twitter</span>
-            </a>
+      <section id="contact" className="terminal-section">
+        <div className="section-command">
+          <span className="prompt">guest@portfolio:~$</span>
+          <span className="command">cat contact.info</span>
+        </div>
+        <div className="terminal-content">
+          <div className="contact-output">
+            <p className="contact-intro">
+              <span className="comment"># Available for new opportunities and collaborations</span>
+            </p>
+            <div className="contact-links">
+              <a 
+                href={`mailto:${contactData.email}`} 
+                className="contact-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Mail size={18} />
+                <span className="link-text">email: {contactData.email}</span>
+              </a>
+              <a 
+                href={`https://github.com/${contactData.github}`}
+                className="contact-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Github size={18} />
+                <span className="link-text">github: /{contactData.github}</span>
+              </a>
+              <a 
+                href={`https://linkedin.com/in/${contactData.linkedin}`}
+                className="contact-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Linkedin size={18} />
+                <span className="link-text">linkedin: /{contactData.linkedin}</span>
+              </a>
+              <a 
+                href={`https://twitter.com/${contactData.twitter}`}
+                className="contact-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Twitter size={18} />
+                <span className="link-text">twitter: @{contactData.twitter}</span>
+              </a>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="footer">
-        <div className="footer-container">
-          <p>© 2024 {personalInfo.name}. All rights reserved.</p>
-          <p className="footer-tagline">Crafted with precision and care.</p>
+      <footer className="terminal-footer">
+        <div className="footer-command">
+          <span className="prompt">guest@portfolio:~$</span>
+          <span className="command">echo "© 2024 {personalInfo.name} | Built with &lt;code/&gt;"</span>
+        </div>
+        <div className="footer-output">
+          © 2024 {personalInfo.name} | Built with &lt;code/&gt;
         </div>
       </footer>
     </div>
