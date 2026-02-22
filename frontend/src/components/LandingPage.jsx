@@ -1,16 +1,49 @@
 import React, { useEffect, useState } from 'react';
-import { Github, Linkedin, Mail, Twitter, ExternalLink } from 'lucide-react';
+import { Github, Linkedin, Mail, Twitter, ExternalLink, Terminal, Folder, File, ChevronRight } from 'lucide-react';
 import { personalInfo, aboutData, projectsData, skillsData, contactData } from '../data/mockData';
 
 const LandingPage = () => {
-  const [scrollY, setScrollY] = useState(0);
   const [activeSection, setActiveSection] = useState('hero');
+  const [typedText, setTypedText] = useState('');
+  const [currentCommand, setCurrentCommand] = useState(0);
+  const [showCursor, setShowCursor] = useState(true);
 
+  const commands = [
+    personalInfo.name,
+    personalInfo.title,
+    personalInfo.tagline
+  ];
+
+  // Typing animation effect
+  useEffect(() => {
+    if (currentCommand >= commands.length) return;
+    
+    const fullText = commands[currentCommand];
+    if (typedText.length < fullText.length) {
+      const timeout = setTimeout(() => {
+        setTypedText(fullText.slice(0, typedText.length + 1));
+      }, 80);
+      return () => clearTimeout(timeout);
+    } else {
+      const timeout = setTimeout(() => {
+        setTypedText('');
+        setCurrentCommand((prev) => prev + 1);
+      }, 2000);
+      return () => clearTimeout(timeout);
+    }
+  }, [typedText, currentCommand, commands]);
+
+  // Cursor blink effect
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setShowCursor((prev) => !prev);
+    }, 500);
+    return () => clearInterval(interval);
+  }, []);
+
+  // Section tracking
   useEffect(() => {
     const handleScroll = () => {
-      setScrollY(window.scrollY);
-      
-      // Determine active section
       const sections = ['hero', 'about', 'projects', 'skills', 'contact'];
       const current = sections.find(section => {
         const element = document.getElementById(section);
