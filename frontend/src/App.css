@@ -256,25 +256,25 @@
   gap: 12px;
   margin-bottom: 16px;
   padding-bottom: 8px;
-  border-bottom: 1px solid #1a1b26;
+  border-bottom: 1px solid #3b4252;
 }
 
 .terminal-content {
-  background: rgba(26, 27, 38, 0.5);
-  border: 1px solid #1a1b26;
+  background: rgba(59, 66, 82, 0.5);
+  border: 1px solid #3b4252;
   border-radius: 8px;
   padding: 24px;
-  box-shadow: 0 0 30px rgba(0, 255, 65, 0.1);
+  box-shadow: 0 0 30px rgba(136, 192, 208, 0.1);
 }
 
 .file-header {
   display: flex;
   align-items: center;
   gap: 8px;
-  color: #7aa2f7;
+  color: #81a1c1;
   margin-bottom: 24px;
   padding-bottom: 12px;
-  border-bottom: 1px solid #1a1b26;
+  border-bottom: 1px solid #3b4252;
 }
 
 /* About Section */
