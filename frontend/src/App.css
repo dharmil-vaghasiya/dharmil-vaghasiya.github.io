@@ -325,7 +325,7 @@
 
 /* Projects Section */
 .ls-header {
-  color: #565f89;
+  color: #616e88;
   margin-bottom: 16px;
   font-size: 13px;
 }
@@ -338,17 +338,17 @@
 
 .project-item {
   padding: 20px;
-  background: rgba(122, 162, 247, 0.05);
-  border: 1px solid #1a1b26;
+  background: rgba(129, 161, 193, 0.05);
+  border: 1px solid #3b4252;
   border-radius: 8px;
   transition: border-color 0.3s, background 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
 .project-item:hover {
-  border-color: #00ff41;
-  background: rgba(0, 255, 65, 0.05);
+  border-color: #88c0d0;
+  background: rgba(136, 192, 208, 0.05);
   transform: translateX(8px);
-  box-shadow: 0 0 20px rgba(0, 255, 65, 0.2);
+  box-shadow: 0 0 20px rgba(136, 192, 208, 0.2);
 }
 
 .project-meta {
@@ -356,24 +356,24 @@
   align-items: center;
   gap: 12px;
   margin-bottom: 12px;
-  color: #7aa2f7;
+  color: #81a1c1;
   font-size: 13px;
 }
 
 .folder-icon {
-  color: #bb9af7;
+  color: #b48ead;
 }
 
 .permissions {
-  color: #565f89;
+  color: #616e88;
 }
 
 .date {
-  color: #565f89;
+  color: #616e88;
 }
 
 .project-name {
-  color: #00ff41;
+  color: #88c0d0;
   font-weight: 600;
   font-size: 16px;
 }
@@ -383,7 +383,7 @@
 }
 
 .project-desc {
-  color: #c0caf5;
+  color: #eceff4;
   margin: 0 0 12px 0;
 }
 
@@ -395,11 +395,11 @@
 }
 
 .stack-label {
-  color: #bb9af7;
+  color: #b48ead;
 }
 
 .stack-values {
-  color: #7aa2f7;
+  color: #81a1c1;
 }
 
 /* Skills Section - JSON Style */
