@@ -477,7 +477,7 @@
 }
 
 .contact-intro {
-  color: #565f89;
+  color: #616e88;
   margin: 0;
 }
 
@@ -492,21 +492,21 @@
   align-items: center;
   gap: 12px;
   padding: 12px 16px;
-  background: rgba(122, 162, 247, 0.05);
-  border: 1px solid #1a1b26;
-  border-left: 3px solid #7aa2f7;
+  background: rgba(129, 161, 193, 0.05);
+  border: 1px solid #3b4252;
+  border-left: 3px solid #81a1c1;
   border-radius: 4px;
-  color: #7aa2f7;
+  color: #81a1c1;
   text-decoration: none;
   transition: background 0.3s, border-color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
 .contact-link:hover {
-  background: rgba(0, 255, 65, 0.1);
-  border-left-color: #00ff41;
-  color: #00ff41;
+  background: rgba(136, 192, 208, 0.1);
+  border-left-color: #88c0d0;
+  color: #88c0d0;
   transform: translateX(8px);
-  box-shadow: 0 0 15px rgba(0, 255, 65, 0.2);
+  box-shadow: 0 0 15px rgba(136, 192, 208, 0.2);
 }
 
 .link-text {
@@ -518,7 +518,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 48px 48px 32px;
-  border-top: 1px solid #1a1b26;
+  border-top: 1px solid #3b4252;
 }
 
 .footer-command {
@@ -528,7 +528,7 @@
 }
 
 .footer-output {
-  color: #565f89;
+  color: #616e88;
   font-size: 13px;
   padding-left: 24px;
 }
