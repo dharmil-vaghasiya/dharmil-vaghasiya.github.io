@@ -23,9 +23,9 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  background: #3b4252;
-  border-bottom: 1px solid #88c0d0;
-  box-shadow: 0 0 20px rgba(136, 192, 208, 0.3);
+  background: #e5e9f0;
+  border-bottom: 1px solid #5e81ac;
+  box-shadow: 0 0 20px rgba(94, 129, 172, 0.3);
   padding: 8px 16px;
   display: flex;
   align-items: center;
