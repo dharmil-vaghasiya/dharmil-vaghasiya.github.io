@@ -1,4 +1,4 @@
-/* Terminal Theme Styles - Nord Color Scheme */
+/* Terminal Theme Styles - Nord Snow Storm (Light) */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500;600&display=swap');
 
 * {
@@ -6,8 +6,8 @@
 }
 
 .terminal-page {
-  background: #2e3440;
-  color: #88c0d0;
+  background: #eceff4;
+  color: #2e3440;
   min-height: 100vh;
   font-family: 'Fira Code', 'JetBrains Mono', 'Courier New', monospace;
   font-size: 14px;
