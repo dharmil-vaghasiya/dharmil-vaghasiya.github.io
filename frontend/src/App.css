@@ -284,7 +284,7 @@
 }
 
 .bio-text {
-  color: #eceff4;
+  color: #3b4252;
   line-height: 1.8;
   margin: 0;
 }
@@ -296,7 +296,7 @@
 }
 
 .highlight-header {
-  color: #616e88;
+  color: #5e81ac;
   margin-bottom: 8px;
 }
 
@@ -304,28 +304,28 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  color: #81a1c1;
+  color: #3b4252;
   padding: 8px 12px;
-  background: rgba(129, 161, 193, 0.05);
-  border-left: 2px solid #81a1c1;
+  background: rgba(94, 129, 172, 0.1);
+  border-left: 2px solid #5e81ac;
   border-radius: 4px;
   transition: background 0.3s, transform 0.3s;
 }
 
 .highlight-line:hover {
-  background: rgba(136, 192, 208, 0.1);
+  background: rgba(94, 129, 172, 0.15);
   transform: translateX(8px);
 }
 
 .line-number {
-  color: #616e88;
+  color: #5e81ac;
   font-size: 12px;
   font-weight: 600;
 }
 
 /* Projects Section */
 .ls-header {
-  color: #616e88;
+  color: #5e81ac;
   margin-bottom: 16px;
   font-size: 13px;
 }
@@ -338,17 +338,17 @@
 
 .project-item {
   padding: 20px;
-  background: rgba(129, 161, 193, 0.05);
-  border: 1px solid #3b4252;
+  background: rgba(216, 222, 233, 0.3);
+  border: 1px solid #d8dee9;
   border-radius: 8px;
   transition: border-color 0.3s, background 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
 .project-item:hover {
-  border-color: #88c0d0;
-  background: rgba(136, 192, 208, 0.05);
+  border-color: #5e81ac;
+  background: rgba(94, 129, 172, 0.15);
   transform: translateX(8px);
-  box-shadow: 0 0 20px rgba(136, 192, 208, 0.2);
+  box-shadow: 0 0 20px rgba(94, 129, 172, 0.2);
 }
 
 .project-meta {
@@ -356,7 +356,7 @@
   align-items: center;
   gap: 12px;
   margin-bottom: 12px;
-  color: #81a1c1;
+  color: #5e81ac;
   font-size: 13px;
 }
 
@@ -365,15 +365,15 @@
 }
 
 .permissions {
-  color: #616e88;
+  color: #4c566a;
 }
 
 .date {
-  color: #616e88;
+  color: #4c566a;
 }
 
 .project-name {
-  color: #88c0d0;
+  color: #5e81ac;
   font-weight: 600;
   font-size: 16px;
 }
@@ -383,7 +383,7 @@
 }
 
 .project-desc {
-  color: #eceff4;
+  color: #3b4252;
   margin: 0 0 12px 0;
 }
 
@@ -399,7 +399,7 @@
 }
 
 .stack-values {
-  color: #81a1c1;
+  color: #3b4252;
 }
 
 /* Skills Section - JSON Style */
@@ -411,11 +411,11 @@
 }
 
 .json-line {
-  color: #eceff4;
+  color: #3b4252;
 }
 
 .bracket {
-  color: #81a1c1;
+  color: #3b4252;
   font-weight: 600;
 }
 
@@ -441,30 +441,31 @@
 }
 
 .skill-value {
-  color: #81a1c1;
+  color: #2e3440;
   padding: 4px 12px;
-  background: rgba(129, 161, 193, 0.1);
-  border: 1px solid rgba(129, 161, 193, 0.3);
+  background: rgba(94, 129, 172, 0.15);
+  border: 1px solid rgba(94, 129, 172, 0.4);
   border-radius: 4px;
   transition: background 0.3s, border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  font-weight: 500;
 }
 
 .skill-value:hover {
-  background: rgba(136, 192, 208, 0.2);
-  border-color: #88c0d0;
+  background: rgba(94, 129, 172, 0.25);
+  border-color: #5e81ac;
   transform: translateY(-2px);
-  box-shadow: 0 0 10px rgba(136, 192, 208, 0.3);
+  box-shadow: 0 0 10px rgba(94, 129, 172, 0.3);
 }
 
 .skill-value.primary {
-  color: #a3be8c;
-  background: rgba(163, 190, 140, 0.1);
-  border-color: rgba(163, 190, 140, 0.3);
+  color: #2e3440;
+  background: rgba(163, 190, 140, 0.25);
+  border-color: rgba(163, 190, 140, 0.5);
   font-weight: 600;
 }
 
 .skill-value.primary:hover {
-  background: rgba(163, 190, 140, 0.2);
+  background: rgba(163, 190, 140, 0.35);
   border-color: #a3be8c;
   box-shadow: 0 0 10px rgba(163, 190, 140, 0.3);
 }
@@ -477,7 +478,7 @@
 }
 
 .contact-intro {
-  color: #616e88;
+  color: #4c566a;
   margin: 0;
 }
 
@@ -492,21 +493,22 @@
   align-items: center;
   gap: 12px;
   padding: 12px 16px;
-  background: rgba(129, 161, 193, 0.05);
-  border: 1px solid #3b4252;
-  border-left: 3px solid #81a1c1;
+  background: rgba(94, 129, 172, 0.1);
+  border: 1px solid #d8dee9;
+  border-left: 3px solid #5e81ac;
   border-radius: 4px;
-  color: #81a1c1;
+  color: #2e3440;
   text-decoration: none;
   transition: background 0.3s, border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  font-weight: 500;
 }
 
 .contact-link:hover {
-  background: rgba(136, 192, 208, 0.1);
-  border-left-color: #88c0d0;
-  color: #88c0d0;
+  background: rgba(94, 129, 172, 0.2);
+  border-left-color: #5e81ac;
+  color: #2e3440;
   transform: translateX(8px);
-  box-shadow: 0 0 15px rgba(136, 192, 208, 0.2);
+  box-shadow: 0 0 15px rgba(94, 129, 172, 0.2);
 }
 
 .link-text {
@@ -518,7 +520,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 48px 48px 32px;
-  border-top: 1px solid #3b4252;
+  border-top: 1px solid #d8dee9;
 }
 
 .footer-command {
@@ -528,7 +530,7 @@
 }
 
 .footer-output {
-  color: #616e88;
+  color: #4c566a;
   font-size: 13px;
   padding-left: 24px;
 }
