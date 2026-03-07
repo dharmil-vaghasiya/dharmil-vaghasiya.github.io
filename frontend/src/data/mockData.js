@@ -30,6 +30,30 @@ export const experienceData = [
       "Led the design and development of fault-tolerant distributed cron services, automating OEM camera ID provisioning and subscription revenue-sharing computations, ensuring reliable and idempotent execution of business-critical financial workflows.",
       "Architected and productionized a real-time analytics and fleet observability platform using ClickHouse and Grafana, processing 30M+ events/day across 300K+ active cameras, enabling P50/P90/P95/P99 anomaly detection, firmware-level behavioral analysis, and real-time fleet connectivity monitoring."
     ]
+  },
+  {
+    id: 2,
+    company: "CloudScale Technologies",
+    position: "Backend Engineer",
+    duration: "Jan 2023 - Jul 2023",
+    location: "Remote",
+    achievements: [
+      "Developed and maintained RESTful APIs and gRPC services in Go, handling 1M+ requests per day with 99.9% uptime, serving core business workflows for enterprise SaaS platform.",
+      "Implemented caching strategies using Redis and optimized database queries, reducing API response times by 40% and improving overall system throughput.",
+      "Collaborated with frontend teams to design API contracts, wrote comprehensive unit and integration tests achieving 85% code coverage."
+    ]
+  },
+  {
+    id: 3,
+    company: "DataFlow Systems",
+    position: "Junior Software Engineer",
+    duration: "Jun 2022 - Dec 2022",
+    location: "Austin, TX",
+    achievements: [
+      "Built backend services for data processing pipelines in Go, processing and transforming 500GB+ of structured data daily for analytics platform.",
+      "Implemented authentication and authorization middleware using JWT, integrated with OAuth 2.0 providers for secure API access.",
+      "Participated in code reviews, wrote technical documentation, and contributed to microservices architecture migration from monolithic application."
+    ]
   }
 ];
 
