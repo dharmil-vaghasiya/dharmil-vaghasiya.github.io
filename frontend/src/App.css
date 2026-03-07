@@ -323,6 +323,110 @@
   font-weight: 600;
 }
 
+/* Experience Section */
+.experience-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.experience-item {
+  padding: 24px;
+  background: rgba(216, 222, 233, 0.3);
+  border: 1px solid #d8dee9;
+  border-left: 3px solid #5e81ac;
+  border-radius: 8px;
+  transition: border-color 0.3s, background 0.3s, transform 0.3s;
+}
+
+.experience-item:hover {
+  background: rgba(94, 129, 172, 0.15);
+  border-left-color: #5e81ac;
+  transform: translateX(4px);
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #d8dee9;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.experience-title {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.briefcase-icon {
+  color: #5e81ac;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.experience-position {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2e3440;
+  margin: 0 0 4px 0;
+}
+
+.experience-company {
+  font-size: 14px;
+  color: #5e81ac;
+  margin: 0;
+  font-weight: 500;
+}
+
+.experience-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-end;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #4c566a;
+}
+
+.meta-item svg {
+  color: #5e81ac;
+}
+
+.experience-achievements {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.achievement-line {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.achievement-line .bullet {
+  color: #5e81ac;
+  font-size: 18px;
+  line-height: 1.6;
+  flex-shrink: 0;
+}
+
+.achievement-line p {
+  margin: 0;
+  color: #3b4252;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
 /* Projects Section */
 .ls-header {
   color: #5e81ac;
@@ -604,6 +708,19 @@
   }
   
   .contact-link:hover {
+    transform: translateY(-2px) translateX(0);
+  }
+  
+  .experience-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .experience-meta {
+    align-items: flex-start;
+  }
+  
+  .experience-item:hover {
     transform: translateY(-2px) translateX(0);
   }
   

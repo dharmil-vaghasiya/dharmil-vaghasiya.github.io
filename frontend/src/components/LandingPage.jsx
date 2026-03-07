@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { Github, Linkedin, Mail, Twitter, ExternalLink, Terminal, Folder, File, ChevronRight } from 'lucide-react';
-import { personalInfo, aboutData, projectsData, skillsData, contactData } from '../data/mockData';
+import { Github, Linkedin, Mail, Twitter, ExternalLink, Terminal, Folder, File, ChevronRight, Briefcase, Calendar, MapPin } from 'lucide-react';
+import { personalInfo, aboutData, experienceData, projectsData, skillsData, contactData } from '../data/mockData';
 
 const LandingPage = () => {
   const [activeSection, setActiveSection] = useState('hero');
@@ -44,7 +44,7 @@ const LandingPage = () => {
   // Section tracking
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['hero', 'about', 'projects', 'skills', 'contact'];
+      const sections = ['hero', 'about', 'experience', 'projects', 'skills', 'contact'];
       const current = sections.find(section => {
         const element = document.getElementById(section);
         if (element) {
@@ -86,6 +86,12 @@ const LandingPage = () => {
             className={activeSection === 'about' ? 'active' : ''}
           >
             ./about
+          </button>
+          <button 
+            onClick={() => scrollToSection('experience')}
+            className={activeSection === 'experience' ? 'active' : ''}
+          >
+            ./experience
           </button>
           <button 
             onClick={() => scrollToSection('projects')}
@@ -181,6 +187,49 @@ const LandingPage = () => {
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Experience Section */}
+      <section id="experience" className="terminal-section">
+        <div className="section-command">
+          <span className="prompt">guest@portfolio:~$</span>
+          <span className="command">cat work_history.log</span>
+        </div>
+        <div className="terminal-content">
+          <div className="experience-timeline">
+            {experienceData.map((exp, index) => (
+              <div key={exp.id} className="experience-item">
+                <div className="experience-header">
+                  <div className="experience-title">
+                    <Briefcase size={18} className="briefcase-icon" />
+                    <div>
+                      <h3 className="experience-position">{exp.position}</h3>
+                      <p className="experience-company">{exp.company}</p>
+                    </div>
+                  </div>
+                  <div className="experience-meta">
+                    <div className="meta-item">
+                      <Calendar size={14} />
+                      <span>{exp.duration}</span>
+                    </div>
+                    <div className="meta-item">
+                      <MapPin size={14} />
+                      <span>{exp.location}</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="experience-achievements">
+                  {exp.achievements.map((achievement, idx) => (
+                    <div key={idx} className="achievement-line">
+                      <span className="bullet">•</span>
+                      <p>{achievement}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

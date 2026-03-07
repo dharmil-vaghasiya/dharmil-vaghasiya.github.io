@@ -18,6 +18,21 @@ export const aboutData = {
   ]
 };
 
+export const experienceData = [
+  {
+    id: 1,
+    company: "TechVision AI",
+    position: "Software Development Engineer",
+    duration: "Aug 2023 - May 2024",
+    location: "San Francisco, CA",
+    achievements: [
+      "As the Founding Engineer, developed backend microservices with 50+ APIs from scratch using domain-driven architecture in Golang for AI-driven outdoor/indoor security camera products.",
+      "Led the design and development of fault-tolerant distributed cron services, automating OEM camera ID provisioning and subscription revenue-sharing computations, ensuring reliable and idempotent execution of business-critical financial workflows.",
+      "Architected and productionized a real-time analytics and fleet observability platform using ClickHouse and Grafana, processing 30M+ events/day across 300K+ active cameras, enabling P50/P90/P95/P99 anomaly detection, firmware-level behavioral analysis, and real-time fleet connectivity monitoring."
+    ]
+  }
+];
+
 export const projectsData = [
   {
     id: 1,
