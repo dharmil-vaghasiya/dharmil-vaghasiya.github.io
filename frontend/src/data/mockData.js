@@ -1,20 +1,21 @@
 // Mock data for the personal landing page
 export const personalInfo = {
-  name: "Alex Chen",
+  name: "Dharmil Vaghasiya",
   title: "Software Developer",
   tagline: "Building scalable systems with Go",
   yearsOfExperience: 3,
-  currentRole: "Backend Engineer at TechStart",
-  location: "San Francisco, CA"
+  currentRole: "SDE-2 at Instavision AI",
+  location: "Ottawa, ON"
 };
 
 export const aboutData = {
-  bio: "I'm a software developer specializing in building high-performance backend systems. With 3 years of experience at a dynamic startup, I focus on creating scalable solutions that power real-world applications. My passion lies in clean code, system architecture, and solving complex technical challenges.",
+  bio: "As a founding engineer at InstaVision, I've been part of the journey since day one, building and scaling our backend from the ground up. I focus on robust microservices in Go, database and API performance, and distributed systems that stay reliable under real production load. Today, InstaVision serves 300K+ users, supported by the systems I've designed and shipped.",
+  backupBio: "As a founding engineer at InstaVision, I've been part of the journey since day one, building and scaling our backend from the ground up. I focus on robust microservices in Go, database and API performance, and distributed systems that stay reliable under real production load. Today, InstaVision serves 300K+ users, supported by the systems I've designed and shipped.",
   highlights: [
     "3+ years of professional experience",
     "Specialized in Go and microservices",
-    "Built systems serving millions of users",
-    "Passionate about clean architecture"
+    "Modeled IoT device capabilities using the Matter Protocol",
+    "Exploring LLM systems and applied AI for real products"
   ]
 };
 
