@@ -37,6 +37,8 @@
     "cmdk": "^1.1.1",
     "cra-template": "1.2.0",
     "embla-carousel-react": "^8.6.0",
+    "firebase": "^11.0.0",
+    "firebase-tools": "^15.9.0",
     "input-otp": "^1.4.2",
     "lucide-react": "^0.507.0",
     "next-themes": "^0.4.6",
@@ -55,8 +57,11 @@
   },
   "scripts": {
     "start": "craco start",
+    "start:env-example": "dotenv -e .env.example -- craco start",
     "build": "craco build",
-    "test": "craco test"
+    "build:env-example": "dotenv -e .env.example -- craco build",
+    "test": "craco test",
+    "test:env-example": "dotenv -e .env.example -- craco test"
   },
   "browserslist": {
     "production": [
@@ -73,6 +78,7 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@craco/craco": "^7.1.0",
+    "dotenv-cli": "^7.4.2",
     "@eslint/js": "9.23.0",
     "autoprefixer": "^10.4.20",
     "eslint": "9.23.0",
