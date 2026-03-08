@@ -1,4 +1,4 @@
-// Mock data for the personal landing page
+
 export const personalInfo = {
   name: "Dharmil Vaghasiya",
   title: "Software Developer",
@@ -23,9 +23,20 @@ export const experienceData = [
   {
     id: 1,
     company: "InstaVision AI",
+    companyUrl: "https://instavision.shop/",
     position: "Software Development Engineer",
     duration: "Aug 2023 - Present",
     location: "Ottawa, ON (Remote)",
+    roles: [
+      {
+        title: "Software Development Engineer-2",
+        duration: "Jun 2024 - Present"
+      },
+      {
+        title: "Software Development Engineer",
+        duration: "Aug 2023 - May 2024"
+      }
+    ],
     achievements: [
       "As the Founding Engineer, developed backend microservices and APIs from scratch using domain-driven architecture in Golang for AI-driven outdoor/indoor security camera products.",
       "Led the design and development of fault-tolerant distributed cron services, subscription revenue-sharing computations and automating OEM camera ID provisioning, ensuring reliable and idempotent execution of business-critical financial workflows.",
@@ -36,9 +47,10 @@ export const experienceData = [
   {
     id: 2,
     company: "KamiVision",
+    companyUrl: "https://kamivision.com/en-us/",
     position: "Software Engineer",
     duration: "Oct 2022 - Jul 2023",
-    location: "Montreal, QC (Remote)",
+    location: "Montreal, QC (Remote)",  
     achievements: [
       "Contributed to KamiCare, an AI fall-detection product for senior living communities, helping deliver fast incident alerts and post-incident video review workflows for care teams.",
       "Integrated AWS Kinesis Video Streams to enable live camera streaming, increasing user engagement by 20%.",
@@ -47,29 +59,6 @@ export const experienceData = [
   }
 ];
 
-export const projectsData = [
-  {
-    id: 1,
-    name: "Distributed Cache System",
-    description: "High-performance distributed caching layer built with Go, handling 50K+ requests per second with sub-millisecond latency.",
-    technologies: ["Go", "Redis", "Docker"],
-    year: "2024"
-  },
-  {
-    id: 2,
-    name: "API Gateway Service",
-    description: "Scalable API gateway managing authentication, rate limiting, and routing for microservices architecture.",
-    technologies: ["Go", "PostgreSQL", "Kubernetes"],
-    year: "2023"
-  },
-  {
-    id: 3,
-    name: "Real-time Analytics Pipeline",
-    description: "Event-driven analytics system processing and aggregating millions of events daily with minimal overhead.",
-    technologies: ["Go", "Kafka", "TimescaleDB"],
-    year: "2024"
-  }
-];
 
 export const skillsData = {
   primary: ["Go", "Distributed Systems", "System Design"],
@@ -80,7 +69,7 @@ export const skillsData = {
 };
 
 export const contactData = {
-  email: "alex.chen@example.com",
-  github: "alexchen",
-  linkedin: "alexchen-dev"
+  email: "dharmilvaghasia3675@gmail.com",
+  github: "dharmil-vaghasiya",
+  linkedin: "dharmil-vaghasiya"
 };

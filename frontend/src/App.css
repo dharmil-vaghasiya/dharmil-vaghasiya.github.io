@@ -339,11 +339,6 @@
   transition: border-color 0.3s, background 0.3s, transform 0.3s;
 }
 
-.experience-item:hover {
-  background: rgba(94, 129, 172, 0.15);
-  border-left-color: #5e81ac;
-  transform: translateX(4px);
-}
 
 .experience-header {
   display: flex;
@@ -380,6 +375,46 @@
   color: #5e81ac;
   margin: 0;
   font-weight: 500;
+}
+
+.experience-company-link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.experience-company-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.experience-roles {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 10px;
+}
+
+.experience-role {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+  color: #4c566a;
+  font-size: 13px;
+}
+
+.experience-role .role-title {
+  color: #2e3440;
+  font-weight: 600;
+}
+
+.experience-role .role-sep {
+  color: #5e81ac;
+  opacity: 0.7;
+}
+
+.experience-role .role-duration {
+  color: #4c566a;
 }
 
 .experience-meta {
@@ -507,10 +542,19 @@
 }
 
 /* Skills Section - JSON Style */
+
+.skills-compact {
+  padding: 48px 48px 64px;
+}
+
+.skills-content {
+  padding: 20px !important;
+}
+
 .json-output {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 2px;
   font-size: 14px;
 }
 
@@ -524,11 +568,11 @@
 }
 
 .json-property {
-  padding-left: 24px;
+  padding-left: 20px;
   display: flex;
   flex-direction: column;
-  gap: 4px;
-  margin: 8px 0;
+  gap: 2px;
+  margin: 4px 0;
 }
 
 .json-property .key {
@@ -537,11 +581,11 @@
 }
 
 .json-array {
-  padding-left: 24px;
+  padding-left: 20px;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin: 8px 0;
+  margin: 6px 0;
 }
 
 .skill-value {
@@ -552,6 +596,7 @@
   border-radius: 4px;
   transition: background 0.3s, border-color 0.3s, transform 0.3s, box-shadow 0.3s;
   font-weight: 500;
+  font-size: 13px;
 }
 
 .skill-value:hover {

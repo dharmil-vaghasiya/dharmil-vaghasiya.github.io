@@ -94,12 +94,6 @@ const LandingPage = () => {
             ./experience
           </button>
           <button 
-            onClick={() => scrollToSection('projects')}
-            className={activeSection === 'projects' ? 'active' : ''}
-          >
-            ./projects
-          </button>
-          <button 
             onClick={() => scrollToSection('skills')}
             className={activeSection === 'skills' ? 'active' : ''}
           >
@@ -206,7 +200,29 @@ const LandingPage = () => {
                     <Briefcase size={18} className="briefcase-icon" />
                     <div>
                       <h3 className="experience-position">{exp.position}</h3>
-                      <p className="experience-company">{exp.company}</p>
+                      {exp.companyUrl ? (
+                        <a
+                          href={exp.companyUrl}
+                          className="experience-company experience-company-link"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {exp.company}
+                        </a>
+                      ) : (
+                        <p className="experience-company">{exp.company}</p>
+                      )}
+                      {Array.isArray(exp.roles) && exp.roles.length > 0 && (
+                        <div className="experience-roles">
+                          {exp.roles.map((role, roleIdx) => (
+                            <div key={roleIdx} className="experience-role">
+                              <span className="role-title">{role.title}</span>
+                              <span className="role-sep">·</span>
+                              <span className="role-duration">{role.duration}</span>
+                            </div>
+                          ))}
+                        </div>
+                      )}
                     </div>
                   </div>
                   <div className="experience-meta">
@@ -235,12 +251,12 @@ const LandingPage = () => {
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className="terminal-section">
+      <section id="skills" className="terminal-section skills-compact">
         <div className="section-command">
           <span className="prompt">guest@portfolio:~$</span>
           <span className="command">cat skills.json</span>
         </div>
-        <div className="terminal-content">
+        <div className="terminal-content skills-content">
           <div className="json-output">
             <div className="json-line">
               <span className="bracket">{'{'}</span>
@@ -327,7 +343,7 @@ const LandingPage = () => {
         <div className="terminal-content">
           <div className="contact-output">
             <p className="contact-intro">
-              <span className="comment"># Available for new opportunities and collaborations</span>
+              <span className="comment"># Always open to collaborate and chat about backend, distributed systems, AI, and product engineering</span>
             </p>
             <div className="contact-links">
               <a 
@@ -340,15 +356,6 @@ const LandingPage = () => {
                 <span className="link-text">email: {contactData.email}</span>
               </a>
               <a 
-                href={`https://github.com/${contactData.github}`}
-                className="contact-link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Github size={18} />
-                <span className="link-text">github: /{contactData.github}</span>
-              </a>
-              <a 
                 href={`https://linkedin.com/in/${contactData.linkedin}`}
                 className="contact-link"
                 target="_blank"
@@ -356,6 +363,15 @@ const LandingPage = () => {
               >
                 <Linkedin size={18} />
                 <span className="link-text">linkedin: /{contactData.linkedin}</span>
+              </a>
+              <a 
+                href={`https://github.com/${contactData.github}`}
+                className="contact-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Github size={18} />
+                <span className="link-text">github: /{contactData.github}</span>
               </a>
             </div>
           </div>
