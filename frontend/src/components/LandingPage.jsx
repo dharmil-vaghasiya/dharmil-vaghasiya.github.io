@@ -380,14 +380,14 @@ const LandingPage = () => {
 
       {/* Footer */}
       <footer className="terminal-footer">
-        <div className="footer-command">
-          <span className="prompt">guest@portfolio:~$</span>
-          <span className="command">echo "© 2024 {personalInfo.name} | Built with &lt;code/&gt;"</span>
-        </div>
-        <div className="footer-output">
-          © 2024 {personalInfo.name} | Built with &lt;code/&gt;
-        </div>
-      </footer>
+          <div className="footer-command">
+            <span className="prompt">dharmil@portfolio:~$</span>
+            <span className="command">echo "No bugs. Just undocumented features."</span>
+          </div>
+          <div className="footer-output">
+            No bugs. Just undocumented features.
+          </div>
+        </footer>
     </div>
   );
 };
