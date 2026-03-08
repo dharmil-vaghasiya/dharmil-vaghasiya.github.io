@@ -271,12 +271,12 @@ const LandingPage = () => {
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className="terminal-section">
+      <section id="skills" className="terminal-section skills-compact">
         <div className="section-command">
           <span className="prompt">guest@portfolio:~$</span>
           <span className="command">cat skills.json</span>
         </div>
-        <div className="terminal-content">
+        <div className="terminal-content skills-content">
           <div className="json-output">
             <div className="json-line">
               <span className="bracket">{'{'}</span>

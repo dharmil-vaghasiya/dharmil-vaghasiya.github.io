@@ -507,10 +507,18 @@
 }
 
 /* Skills Section - JSON Style */
+.skills-compact {
+  padding: 48px 48px 64px;
+}
+
+.skills-content {
+  padding: 20px !important;
+}
+
 .json-output {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 2px;
   font-size: 14px;
 }
 
@@ -524,11 +532,11 @@
 }
 
 .json-property {
-  padding-left: 24px;
+  padding-left: 20px;
   display: flex;
   flex-direction: column;
-  gap: 4px;
-  margin: 8px 0;
+  gap: 2px;
+  margin: 4px 0;
 }
 
 .json-property .key {
@@ -537,21 +545,22 @@
 }
 
 .json-array {
-  padding-left: 24px;
+  padding-left: 20px;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin: 8px 0;
+  margin: 6px 0;
 }
 
 .skill-value {
   color: #2e3440;
-  padding: 4px 12px;
+  padding: 6px 14px;
   background: rgba(94, 129, 172, 0.15);
   border: 1px solid rgba(94, 129, 172, 0.4);
   border-radius: 4px;
   transition: background 0.3s, border-color 0.3s, transform 0.3s, box-shadow 0.3s;
   font-weight: 500;
+  font-size: 13px;
 }
 
 .skill-value:hover {
