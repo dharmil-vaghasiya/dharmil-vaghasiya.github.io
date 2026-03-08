@@ -22,38 +22,27 @@ export const aboutData = {
 export const experienceData = [
   {
     id: 1,
-    company: "TechVision AI",
+    company: "InstaVision AI",
     position: "Software Development Engineer",
-    duration: "Aug 2023 - May 2024",
-    location: "San Francisco, CA",
+    duration: "Aug 2023 - Present",
+    location: "Ottawa, ON (Remote)",
     achievements: [
-      "As the Founding Engineer, developed backend microservices with 50+ APIs from scratch using domain-driven architecture in Golang for AI-driven outdoor/indoor security camera products.",
-      "Led the design and development of fault-tolerant distributed cron services, automating OEM camera ID provisioning and subscription revenue-sharing computations, ensuring reliable and idempotent execution of business-critical financial workflows.",
-      "Architected and productionized a real-time analytics and fleet observability platform using ClickHouse and Grafana, processing 30M+ events/day across 300K+ active cameras, enabling P50/P90/P95/P99 anomaly detection, firmware-level behavioral analysis, and real-time fleet connectivity monitoring."
+      "As the Founding Engineer, developed backend microservices and APIs from scratch using domain-driven architecture in Golang for AI-driven outdoor/indoor security camera products.",
+      "Led the design and development of fault-tolerant distributed cron services, subscription revenue-sharing computations and automating OEM camera ID provisioning, ensuring reliable and idempotent execution of business-critical financial workflows.",
+      "Architected and productionized a real-time analytics and fleet observability platform using ClickHouse and Grafana, processing 30M+ events/day across 300K+ active cameras, enabling P50/P90/P95/P99 anomaly detection, firmware-level behavioral analysis, and real-time fleet connectivity monitoring.",
+      "Engineered a Matter protocol-based device capability model and backend schema to enable capability-driven app UI rendering and seamless firmware cluster integration across IoT devices."
     ]
   },
   {
     id: 2,
-    company: "CloudScale Technologies",
-    position: "Backend Engineer",
-    duration: "Jan 2023 - Jul 2023",
-    location: "Remote",
+    company: "KamiVision",
+    position: "Software Engineer",
+    duration: "Oct 2022 - Jul 2023",
+    location: "Montreal, QC (Remote)",
     achievements: [
-      "Developed and maintained RESTful APIs and gRPC services in Go, handling 1M+ requests per day with 99.9% uptime, serving core business workflows for enterprise SaaS platform.",
-      "Implemented caching strategies using Redis and optimized database queries, reducing API response times by 40% and improving overall system throughput.",
-      "Collaborated with frontend teams to design API contracts, wrote comprehensive unit and integration tests achieving 85% code coverage."
-    ]
-  },
-  {
-    id: 3,
-    company: "DataFlow Systems",
-    position: "Junior Software Engineer",
-    duration: "Jun 2022 - Dec 2022",
-    location: "Austin, TX",
-    achievements: [
-      "Built backend services for data processing pipelines in Go, processing and transforming 500GB+ of structured data daily for analytics platform.",
-      "Implemented authentication and authorization middleware using JWT, integrated with OAuth 2.0 providers for secure API access.",
-      "Participated in code reviews, wrote technical documentation, and contributed to microservices architecture migration from monolithic application."
+      "Contributed to KamiCare, an AI fall-detection product for senior living communities, helping deliver fast incident alerts and post-incident video review workflows for care teams.",
+      "Integrated AWS Kinesis Video Streams to enable live camera streaming, increasing user engagement by 20%.",
+      "Designed and implemented the Zone Detection feature along with key reliability enhancements, improving event detection precision by 5% and strengthening monitoring accuracy."
     ]
   }
 ];
@@ -83,15 +72,15 @@ export const projectsData = [
 ];
 
 export const skillsData = {
-  primary: ["Go", "Microservices", "System Design"],
-  languages: ["Go", "Python", "JavaScript", "SQL"],
-  technologies: ["Docker", "Kubernetes", "PostgreSQL", "Redis", "Kafka", "gRPC"],
-  practices: ["CI/CD", "TDD", "Agile", "Code Review"]
+  primary: ["Go", "Distributed Systems", "System Design"],
+  languages: ["Go", "JavaScript", "TypeScript", "Java", "C++", "HTML/CSS"],
+  databasesFrameworks: ["MongoDB", "PostgreSQL", "Redis", "React.js"],
+  devops: ["Docker", "Kubernetes", "Argo CD", "AWS (S3, EKS, ECR, IoT Core, KVS, EventBridge)"],
+  backendStack: ["Kafka", "RabbitMQ", "Prometheus", "Grafana", "ClickHouse", "gRPC", "Git", "Keycloak"]
 };
 
 export const contactData = {
   email: "alex.chen@example.com",
   github: "alexchen",
-  linkedin: "alexchen-dev",
-  twitter: "alexchen_dev"
+  linkedin: "alexchen-dev"
 };

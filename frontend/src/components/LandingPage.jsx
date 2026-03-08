@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Github, Linkedin, Mail, Twitter, ExternalLink, Terminal, Folder, File, ChevronRight, Briefcase, Calendar, MapPin } from 'lucide-react';
+import { Github, Linkedin, Mail, Terminal, Folder, File, ChevronRight, Briefcase, Calendar, MapPin } from 'lucide-react';
 import { personalInfo, aboutData, experienceData, projectsData, skillsData, contactData } from '../data/mockData';
 
 const LandingPage = () => {
@@ -234,42 +234,6 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* Projects Section */}
-      <section id="projects" className="terminal-section">
-        <div className="section-command">
-          <span className="prompt">guest@portfolio:~$</span>
-          <span className="command">ls -la ./projects</span>
-        </div>
-        <div className="terminal-content">
-          <div className="ls-header">
-            <span>total {projectsData.length}</span>
-          </div>
-          <div className="projects-list">
-            {projectsData.map((project, index) => (
-              <div key={project.id} className="project-item">
-                <div className="project-meta">
-                  <Folder size={16} className="folder-icon" />
-                  <span className="permissions">drwxr-xr-x</span>
-                  <span className="date">{project.year}</span>
-                  <span className="project-name">{project.name}</span>
-                </div>
-                <div className="project-details">
-                  <p className="project-desc">
-                    <span className="comment">#</span> {project.description}
-                  </p>
-                  <div className="tech-stack">
-                    <span className="stack-label">tech_stack:</span>
-                    <span className="stack-values">
-                      [{project.technologies.map(tech => `"${tech}"`).join(', ')}]
-                    </span>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Skills Section */}
       <section id="skills" className="terminal-section">
         <div className="section-command">
@@ -309,12 +273,12 @@ const LandingPage = () => {
             </div>
 
             <div className="json-property">
-              <span className="key">"technologies"</span>
+              <span className="key">"databases_frameworks"</span>
               <span>: [</span>
               <div className="json-array">
-                {skillsData.technologies.map((skill, idx) => (
+                {skillsData.databasesFrameworks.map((skill, idx) => (
                   <span key={idx} className="skill-value">
-                    "{skill}"{idx < skillsData.technologies.length - 1 ? ',' : ''}
+                    "{skill}"{idx < skillsData.databasesFrameworks.length - 1 ? ',' : ''}
                   </span>
                 ))}
               </div>
@@ -322,12 +286,25 @@ const LandingPage = () => {
             </div>
 
             <div className="json-property">
-              <span className="key">"practices"</span>
+              <span className="key">"devops"</span>
               <span>: [</span>
               <div className="json-array">
-                {skillsData.practices.map((skill, idx) => (
+                {skillsData.devops.map((skill, idx) => (
                   <span key={idx} className="skill-value">
-                    "{skill}"{idx < skillsData.practices.length - 1 ? ',' : ''}
+                    "{skill}"{idx < skillsData.devops.length - 1 ? ',' : ''}
+                  </span>
+                ))}
+              </div>
+              <span>],</span>
+            </div>
+
+            <div className="json-property">
+              <span className="key">"backend_stack"</span>
+              <span>: [</span>
+              <div className="json-array">
+                {skillsData.backendStack.map((skill, idx) => (
+                  <span key={idx} className="skill-value">
+                    "{skill}"{idx < skillsData.backendStack.length - 1 ? ',' : ''}
                   </span>
                 ))}
               </div>
@@ -379,15 +356,6 @@ const LandingPage = () => {
               >
                 <Linkedin size={18} />
                 <span className="link-text">linkedin: /{contactData.linkedin}</span>
-              </a>
-              <a 
-                href={`https://twitter.com/${contactData.twitter}`}
-                className="contact-link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Twitter size={18} />
-                <span className="link-text">twitter: @{contactData.twitter}</span>
               </a>
             </div>
           </div>
